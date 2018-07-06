@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1229432464782376}
+  m_RootGameObject: {fileID: 1253367004954930}
   m_IsPrefabParent: 1
---- !u!1 &1229432464782376
+--- !u!1 &1253367004954930
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4538554050356520}
-  - component: {fileID: 33127833443265926}
-  - component: {fileID: 23121659374677486}
-  - component: {fileID: 61426584100512420}
-  - component: {fileID: 50192938611746694}
+  - component: {fileID: 4780998550550304}
+  - component: {fileID: 33781995052156494}
+  - component: {fileID: 23064102999222960}
+  - component: {fileID: 61926670049855558}
+  - component: {fileID: 50235215590163338}
   m_Layer: 0
-  m_Name: Banana
+  m_Name: Bread
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4538554050356520
+--- !u!4 &4780998550550304
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1229432464782376}
-  m_LocalRotation: {x: -0.00064009975, y: 0.8068516, z: 0.00087425363, w: 0.59075314}
-  m_LocalPosition: {x: -7.322, y: 4.093, z: 0.298}
-  m_LocalScale: {x: 3.8344479, y: 4.0871806, z: 4.577871}
+  m_GameObject: {fileID: 1253367004954930}
+  m_LocalRotation: {x: -0.53136957, y: 0.043101422, z: -0.025620691, w: 0.84565496}
+  m_LocalPosition: {x: -6.495, y: 3.476, z: 0.3}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.124000005, y: 107.579, z: 0}
---- !u!23 &23121659374677486
+  m_LocalEulerAnglesHint: {x: -63.702003, y: 13.062, z: -11.607}
+--- !u!23 &23064102999222960
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1229432464782376}
+  m_GameObject: {fileID: 1253367004954930}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -78,20 +78,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33127833443265926
+--- !u!33 &33781995052156494
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1229432464782376}
-  m_Mesh: {fileID: 4300000, guid: 6d05be1b78e41a948b8d50bee67bce65, type: 3}
---- !u!50 &50192938611746694
+  m_GameObject: {fileID: 1253367004954930}
+  m_Mesh: {fileID: 4300000, guid: 4003a6e41cba6ab4fbe00f575654cdb1, type: 3}
+--- !u!50 &50235215590163338
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1229432464782376}
+  m_GameObject: {fileID: 1253367004954930}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -105,19 +105,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61426584100512420
+--- !u!61 &61926670049855558
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1229432464782376}
+  m_GameObject: {fileID: 1253367004954930}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.005172029, y: 0.0031733438}
+  m_Offset: {x: 0, y: -0.0019536167}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -126,7 +126,7 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 1
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8578479, y: 0.23951004}
+  m_Size: {x: 0.25120056, y: 0.5508362}
   m_EdgeRadius: 0
