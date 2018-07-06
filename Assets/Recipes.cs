@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Recipes : MonoBehaviour {
 
-    public int Chicken;
-    public int Salt;
-    public int Carrots;
-    public int Beef;
-    public int Lettuce;
+    public string[] NamesOfIngredients;
 
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
