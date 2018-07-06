@@ -7,7 +7,9 @@ public class Spawn: MonoBehaviour {
     public bool stopSpawn = false;
     public float spawnTime;
     public float delay; 
-    public float ySpeed; 
+    public float ySpeed;
+
+    public GameObject[] ingredients;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +19,9 @@ public class Spawn: MonoBehaviour {
 	
 	public void spawnObject()
     {
-        GameObject spawned = Instantiate(ingredient, transform.position, transform.rotation);
+        //pick random objct in ingredients[] 
+        int index = Random.Range(0, ingredients.Length);
+        GameObject spawned = Instantiate(ingredients[index], transform.position, ingredients[index].transform.rotation);
         spawned.GetComponent<Rigidbody2D>().velocity = new Vector2(0, ySpeed);
 
         if( stopSpawn )
