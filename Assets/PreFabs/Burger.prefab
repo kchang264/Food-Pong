@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33984319122020614}
   - component: {fileID: 23154038689090816}
   - component: {fileID: 50979344707218350}
-  - component: {fileID: 58872333670227208}
+  - component: {fileID: 61377575859630348}
   m_Layer: 0
   m_Name: Burger
   m_TagString: Untagged
@@ -36,8 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1117861092525136}
+<<<<<<< HEAD
   m_LocalRotation: {x: -0.10277878, y: -0, z: -0, w: 0.9947043}
   m_LocalPosition: {x: -5.115, y: -0.185, z: 0.000000006141301}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.686264, y: 2.1909442, z: 0}
+>>>>>>> bcd740dff73abe03197438664f99568d209ddc46
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -105,8 +110,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58872333670227208
-CircleCollider2D:
+--- !u!61 &61377575859630348
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -117,6 +122,16 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0000000055879363}
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.06035644
+  m_Size: {x: 0.25, y: 0.25}
+  m_EdgeRadius: 0
