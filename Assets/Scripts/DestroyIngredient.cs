@@ -26,6 +26,11 @@ public class DestroyIngredient : MonoBehaviour {
         rb = gameObject.GetComponent<Rigidbody2D>();
         script = txt.GetComponent<RecipesText>(); // Access the other script to change the values
 
+        //There's an exception error (as of 8/7/18 11 am). Just putting here before i forget lols. 
+        //NullReferenceException: Object reference not set to an instance of an object
+        //DestroyIngredient.Start()(at Assets / Scripts / DestroyIngredient.cs:27)
+
+
         // new array of string versions of names of ingredients for comparison purposes
         namesIngredients = new string[script.ListOfIngredients.Length];
         for (int i = 0; i < namesIngredients.Length; ++i)
