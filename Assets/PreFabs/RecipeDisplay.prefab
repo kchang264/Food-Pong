@@ -79,13 +79,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Recipe
-
-    Cheese: 3
-
-    Burger: 4
-
-    Apple: 1
+  m_Text: '
 
 '
 --- !u!114 &114285064006209184
@@ -115,12 +109,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bccb178f03d70f64aae24fdcfb49e717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NamesOfIngredients:
-  - Cheese
-  - Burger
-  - Apple
+  ListOfIngredients:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  numberItems: 
   txt: {fileID: 114002083011503190}
-  maxRecipe: 5
+  maxRecipe: 3
 --- !u!114 &114450654159200376
 MonoBehaviour:
   m_ObjectHideFlags: 1

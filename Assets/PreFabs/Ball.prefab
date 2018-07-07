@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  txt: {fileID: 0}
 --- !u!212 &212822904976034396
 SpriteRenderer:
   m_ObjectHideFlags: 1
