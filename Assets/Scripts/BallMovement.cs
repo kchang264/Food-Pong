@@ -7,7 +7,6 @@ public float force = 500f;
 
 public class BallMovement : MonoBehaviour {
 
-     
 
     private void onMouseDown()
     {

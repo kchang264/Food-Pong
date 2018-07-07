@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour {
 
-    private void OnCollisionEnter2D(Collision2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
         if( col.gameObject.name != "Pong" )
         {
             Destroy(col.gameObject);
         }
+        Debug.Log("Being entered");
     }
 }

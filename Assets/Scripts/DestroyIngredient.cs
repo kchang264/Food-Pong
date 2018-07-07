@@ -20,8 +20,12 @@ public class DestroyIngredient : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Destroy(other.gameObject);
-        rb.velocity = new Vector2(-speed, -rb.velocity.y);
+        if( other.gameObject.tag != "ignore")
+        {
+            Destroy(other.gameObject);
+            rb.velocity = new Vector2(-speed, -rb.velocity.y);
+        }
+        
     }
 
 	// Update is called once per frame
