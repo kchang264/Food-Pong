@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23515444321923808}
   - component: {fileID: 61818979236246820}
   - component: {fileID: 50318656731212344}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Avocado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1285327657211138}
   m_LocalRotation: {x: -0.2769483, y: -0.0031895163, z: -0.025706671, w: 0.96053565}
-  m_LocalPosition: {x: -6.369, y: 4.001, z: -1.017}
+  m_LocalPosition: {x: -10.22219, y: 3.3085594, z: -0.36}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}

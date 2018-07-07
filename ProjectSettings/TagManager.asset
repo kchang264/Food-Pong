@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - ignore
+  - ingredient
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Food
+  - Border Edge
   - 
   - 
   - 
