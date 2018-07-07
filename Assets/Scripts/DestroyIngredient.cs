@@ -19,18 +19,26 @@ public class DestroyIngredient : MonoBehaviour {
     public int speed;
     public Text txt;
     private RecipesText script;
+    private string[] namesIngredients; // needed to compare names of ingredients (comparing objects doesnt work for some reason)
 
 	// Use this for initialization
 	void Start () {
         rb = gameObject.GetComponent<Rigidbody2D>();
         script = txt.GetComponent<RecipesText>(); // Access the other script to change the values
-	}
+
+        // new array of string versions of names of ingredients for comparison purposes
+        namesIngredients = new string[script.ListOfIngredients.Length];
+        for (int i = 0; i < namesIngredients.Length; ++i)
+        {
+            namesIngredients[i] = script.ListOfIngredients[i].name;
+        }
+    }
 
     /*Accesses RecipesText Script and changes the text value every time an ingredient is hit*/
     private void DecrementRecipeCount(Collision2D other)
     {
         Debug.Log(other.gameObject.name);
-        int index = Array.IndexOf(script.ListOfIngredients, other.gameObject);
+        int index = Array.IndexOf(namesIngredients, other.gameObject.name);
         if (index != -1 && script.numberItems[index] > 0)
         {
             script.numberItems[index]--;

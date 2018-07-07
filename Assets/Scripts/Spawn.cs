@@ -41,6 +41,7 @@ public class Spawn: MonoBehaviour {
         int index = Random.Range(0, ingredients.Length);
         GameObject spawned = Instantiate(ingredients[index], transform.position, ingredients[index].transform.rotation);
         spawned.GetComponent<Rigidbody2D>().velocity = new Vector2(0, ySpeed);
+        spawned.name = ingredients[index].name;  // ANNA was HERE! I added this line so that the name doesn't say (Clone)
 
         /**
         //spawn border 
