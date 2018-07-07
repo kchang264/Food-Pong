@@ -19,6 +19,7 @@ public class DestroyIngredient : MonoBehaviour {
     public int speed;
     public Text txt;
     private RecipesText script;
+    public GameObject ignoreBorder;
     private string[] namesIngredients; // needed to compare names of ingredients (comparing objects doesnt work for some reason)
 
 	// Use this for initialization
@@ -32,6 +33,10 @@ public class DestroyIngredient : MonoBehaviour {
         {
             namesIngredients[i] = script.ListOfIngredients[i].name;
         }
+
+        // ignore collisions btwn ball and border #### not sure if this works??? because each border is a clone not the original
+        Physics2D.IgnoreCollision(ignoreBorder.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+
     }
 
     /*Accesses RecipesText Script and changes the text value every time an ingredient is hit*/
@@ -55,11 +60,11 @@ public class DestroyIngredient : MonoBehaviour {
     /*Every time ingredient is hit, the text is updated and ingredient is destroyed*/
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if( other.gameObject.tag != "ignore")
+        if (other.gameObject.tag != "ignore")
         {
             DecrementRecipeCount(other);
             Destroy(other.gameObject);
             rb.velocity = new Vector2(-speed, -rb.velocity.y);
-        }   
+        }
     }
 }
