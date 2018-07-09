@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -699,6 +699,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &840737527 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114002083011503190, guid: 6f60126b92b5deb4e9415a157f46b3da,
+    type: 2}
+  m_PrefabInternal: {fileID: 377324482}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &864534855
 Prefab:
   m_ObjectHideFlags: 0
@@ -1131,7 +1137,7 @@ Prefab:
         type: 2}
       propertyPath: txt
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 840737527}
     - target: {fileID: 1746653132580090, guid: 874b2a23e8eae524aaf1bd2adb08eb5a, type: 2}
       propertyPath: m_Name
       value: 'Ball '
