@@ -10,6 +10,5 @@ public class Destroy : MonoBehaviour {
         {
             Destroy(col.gameObject);
         }
-        Debug.Log("Being entered");
     }
 }
