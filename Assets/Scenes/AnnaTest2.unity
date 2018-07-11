@@ -253,11 +253,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114418444773958456, guid: 6f60126b92b5deb4e9415a157f46b3da,
-        type: 2}
-      propertyPath: ListOfIngredients.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 224037592254247310, guid: 6f60126b92b5deb4e9415a157f46b3da,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -306,7 +301,7 @@ Prefab:
     - target: {fileID: 224037592254247310, guid: 6f60126b92b5deb4e9415a157f46b3da,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 4.23
+      value: 3.79
       objectReference: {fileID: 0}
     - target: {fileID: 224037592254247310, guid: 6f60126b92b5deb4e9415a157f46b3da,
         type: 2}
@@ -347,50 +342,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114418444773958456, guid: 6f60126b92b5deb4e9415a157f46b3da,
-        type: 2}
-      propertyPath: ListOfIngredients.Array.data[0]
-      value: 
-      objectReference: {fileID: 1080290550005678, guid: c84dd17c64b83dc4496499c630ef6352,
-        type: 2}
-    - target: {fileID: 114418444773958456, guid: 6f60126b92b5deb4e9415a157f46b3da,
-        type: 2}
-      propertyPath: ListOfIngredients.Array.data[1]
-      value: 
-      objectReference: {fileID: 1253367004954930, guid: 4163628190b04534c8299c9f37172c92,
-        type: 2}
-    - target: {fileID: 114418444773958456, guid: 6f60126b92b5deb4e9415a157f46b3da,
-        type: 2}
-      propertyPath: ListOfIngredients.Array.data[2]
-      value: 
-      objectReference: {fileID: 1285327657211138, guid: d1b3c4e057fb9534b99490528b1c2bd2,
-        type: 2}
-    - target: {fileID: 114418444773958456, guid: 6f60126b92b5deb4e9415a157f46b3da,
-        type: 2}
-      propertyPath: ListOfIngredients.Array.data[3]
-      value: 
-      objectReference: {fileID: 1229432464782376, guid: 61c25ef4084fae943a6bfeb0537574dd,
-        type: 2}
-    - target: {fileID: 114418444773958456, guid: 6f60126b92b5deb4e9415a157f46b3da,
-        type: 2}
-      propertyPath: maxRecipe
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224960189215729132, guid: 6f60126b92b5deb4e9415a157f46b3da,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224960189215729132, guid: 6f60126b92b5deb4e9415a157f46b3da,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114002083011503190, guid: 6f60126b92b5deb4e9415a157f46b3da,
-        type: 2}
-      propertyPath: m_FontData.m_Alignment
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f60126b92b5deb4e9415a157f46b3da, type: 2}
