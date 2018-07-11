@@ -65,7 +65,9 @@ public class DestroyIngredient : MonoBehaviour {
     /*Every time ingredient is hit, the text is updated and ingredient is destroyed*/
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag != "ignore")
+        if (!(other.gameObject.tag == "ignore"
+             || other.gameObject.tag == "Wall"
+             || other.gameObject.tag == "Paddle"))
         {
             DecrementRecipeCount(other);
             Destroy(other.gameObject);
