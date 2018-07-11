@@ -41,7 +41,6 @@ public class BallMovement : MonoBehaviour {
         yield return new WaitForSeconds(2); // wait for 2 seconds b/c thats how long before the ball moves
         rb2d.velocity = ClampMagnitude(rb2d.velocity, maxSpeed, minSpeed);
         preventVertical();
-        Debug.Log(rb2d.velocity);     
     }
 
 	// Update is called once per frame

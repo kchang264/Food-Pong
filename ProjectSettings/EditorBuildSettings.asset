@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 600e77be978b13542b851215513ee5cd
+  - enabled: 1
+    path: Assets/Scenes/Pong.unity
+    guid: 76687a1681ea646d89794b347f844c7f
+  - enabled: 1
+    path: Assets/Scenes/WinTest.unity
+    guid: 40dc58fb7c198a0468e6805aa80ee11b
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/AnnaTest2.unity
     guid: bfadc276fbc7c2e4b839196ed22e1bb8
-  - enabled: 1
-    path: Assets/Scenes/WinTest.unity
-    guid: 40dc58fb7c198a0468e6805aa80ee11b
-  - enabled: 1
-    path: Assets/Scenes/Pong.unity
-    guid: 76687a1681ea646d89794b347f844c7f
   m_configObjects: {}
