@@ -6,6 +6,8 @@ public class BallMovement : MonoBehaviour {
 
     private Rigidbody2D rb2d;
     private Vector2 vel;
+    public float minSpeed = 3.0f;
+    public float maxSpeed = 9.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,10 +15,39 @@ public class BallMovement : MonoBehaviour {
         Invoke("GoBall", 2);
 	}
 	
+    /*custom clamp magnitude function that accounts for both max and min */
+    public static Vector2 ClampMagnitude(Vector2 v, float max, float min)
+    {
+        double sm = v.sqrMagnitude;
+        if (sm > (double)max * (double)max)
+            return v.normalized * max;
+        else if (sm < (double)min * (double)min)
+            return v.normalized * min;
+        return v;
+    }
+
+    /* if x velocity becomes 0, sets it to 2 so it isn't stuck up and down*/
+    private void preventVertical()
+    {
+        if (rb2d.velocity.x == 0.0f)
+        {
+            rb2d.velocity = new Vector2(2.0f, rb2d.velocity.y);
+        }
+    }
+
+    /* wait for 2 seconds before checking if velocity is below/above an amount*/
+    IEnumerator MinMaxVelocity()
+    {
+        yield return new WaitForSeconds(2); // wait for 2 seconds b/c thats how long before the ball moves
+        rb2d.velocity = ClampMagnitude(rb2d.velocity, maxSpeed, minSpeed);
+        preventVertical();
+        Debug.Log(rb2d.velocity);     
+    }
+
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        StartCoroutine(MinMaxVelocity());
+    }
 
     void GoBall()
     {

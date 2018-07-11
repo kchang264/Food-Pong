@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RecipesText : MonoBehaviour {
 
@@ -25,6 +26,19 @@ public class RecipesText : MonoBehaviour {
         }
     }
 
+    /*Checks if all elements in numberItems == 0, and if they are, returns True*/ 
+    private bool RecipeDone()
+    {
+        for (int i = 0; i < numberItems.Length; ++i)
+        {
+            if (numberItems[i] != 0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
 	// Use this for initialization
 	void Start () {
         /*instantiate numberItems with random values*/
@@ -38,4 +52,11 @@ public class RecipesText : MonoBehaviour {
         txt = GetComponent<Text>();
         StartingRecipe(ListOfIngredients);
  	}
+    void Update()
+    {
+        if (RecipeDone())
+        {
+            SceneManager.LoadScene("WinTest", LoadSceneMode.Single);
+        }
+    }
 }
