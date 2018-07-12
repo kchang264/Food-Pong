@@ -302,7 +302,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Instructions '
+  m_Text: 'Credits '
 --- !u!222 &1037608311
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 1170578155}
   - component: {fileID: 1170578154}
   m_Layer: 5
-  m_Name: 'Instructions '
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -376,9 +376,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "- Use the paddle to hit the ball and get the ingredients in the recipe
-    on the other side in a pong game\n- Hitting wrong ingredients deducts time\n-Bonus
-    ingredients gives more points \n-TBC!"
+  m_Text: "-HURDUR HURDUR \nSOMETHING SOMETHING \nSOMETHING SOMETHIGN \nFILL THIS
+    LATER "
 --- !u!222 &1170578155
 CanvasRenderer:
   m_ObjectHideFlags: 0
