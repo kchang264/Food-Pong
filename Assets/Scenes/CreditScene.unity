@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -376,8 +376,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "-HURDUR HURDUR \nSOMETHING SOMETHING \nSOMETHING SOMETHIGN \nFILL THIS
-    LATER "
+  m_Text: 'PROGRAMMING & DESIGN
+
+    Anna Qiu
+
+    Jennifer Chiang
+
+    Kelly Chang
+
+    Kimberly Lo
+
+
+    ART
+
+    amazing people who art foods :)'
 --- !u!222 &1170578155
 CanvasRenderer:
   m_ObjectHideFlags: 0
