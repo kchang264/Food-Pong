@@ -8,13 +8,13 @@ public class StartButton : MonoBehaviour {
 
     // add other button code to this script too once those scenes are made
 
-    public Button start;
+    //public Button start;
     //public Button instructions;
     //public Button credits;
 
 	// Use this for initialization
 	void Start () {
-        Button startbtn = start.GetComponent<Button>();
+        //Button startbtn = start.GetComponent<Button>();
     }
 
     public void StartOnClick()
