@@ -80,6 +80,8 @@ public class BallMovement : MonoBehaviour {
         // if ball hits left wall, respawn it in the middle
         if (coll.gameObject.name == "LeftWall")
         {
+            //##### add code here for decreasing score if the ball hits the wall #####
+
             timeAfterRespawn = 2; //2 seconds after respawn, set velocity to fast
             transform.position = new Vector3(-1, 0, 0);
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);

@@ -494,6 +494,11 @@ Prefab:
       propertyPath: m_FontData.m_Alignment
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114002083011503190, guid: 6f60126b92b5deb4e9415a157f46b3da,
+        type: 2}
+      propertyPath: m_FontData.m_RichText
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f60126b92b5deb4e9415a157f46b3da, type: 2}
   m_IsPrefabParent: 0
@@ -1138,20 +1143,6 @@ Prefab:
       propertyPath: txt
       value: 
       objectReference: {fileID: 840737527}
-    - target: {fileID: 1746653132580090, guid: 874b2a23e8eae524aaf1bd2adb08eb5a, type: 2}
-      propertyPath: m_Name
-      value: Ball
-      objectReference: {fileID: 0}
-    - target: {fileID: 114936119750949576, guid: 874b2a23e8eae524aaf1bd2adb08eb5a,
-        type: 2}
-      propertyPath: minSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114936119750949576, guid: 874b2a23e8eae524aaf1bd2adb08eb5a,
-        type: 2}
-      propertyPath: maxSpeed
-      value: 15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 874b2a23e8eae524aaf1bd2adb08eb5a, type: 2}
   m_IsPrefabParent: 0
