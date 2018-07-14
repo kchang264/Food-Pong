@@ -9,6 +9,7 @@ TagManager:
   - Paddle
   - ingredient
   - Wall
+  - Paused
   layers:
   - Default
   - TransparentFX

@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreditScene.unity
     guid: b9da47dd39a520a4d89081be14951256
+  - enabled: 1
+    path: Assets/Scenes/Pong2Pause.unity
+    guid: 9506ae81acbcef5479556d8dff577f18
   m_configObjects: {}
