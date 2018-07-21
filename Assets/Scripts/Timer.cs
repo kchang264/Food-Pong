@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour {
 
     public Text timerTxt;
     private int totalSec;
-    private bool endTime; 
 
 	void Start () {
         // Use this for initialization
         totalSec = 10; //Player gets 120 seconds to play  
-        endTime = true;
         InvokeRepeating( "UpdateSeconds" , 0f, 1.0f);
 	}
 	
@@ -26,7 +25,9 @@ public class Timer : MonoBehaviour {
         }
         else
         {
-            //time == 0, game must end 
+            Debug.Log("INISDE");
+            //time == 0, game must end. Since time ran out, goes to lose screen 
+            SceneManager.LoadScene("LoseTest", LoadSceneMode.Single);
         }
         //elapsed time is float 
         // ((int)elapsedTime % 60).ToString("f0"); //float with 0 decimals; f2 = float w/ 2 decimal places    
