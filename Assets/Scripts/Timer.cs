@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour {
 	void Start () {
         // Use this for initialization
         totalSec = 10; //Player gets 120 seconds to play  
-        InvokeRepeating( "UpdateSeconds" , 0f, 1.0f);
+        InvokeRepeating( "UpdateSeconds" , 2.0f, 1.0f); //calls after 2 seconds for every second 
 	}
 	
 	// Update is called once per frame
