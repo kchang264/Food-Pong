@@ -9,6 +9,8 @@ public class Timer : MonoBehaviour {
     public Text timerTxt;
     private int totalSec;
 
+    public GameObject endPanel; 
+
 	void Start () {
         // Use this for initialization
         totalSec = 120; //Player gets 120 seconds to play  
@@ -27,7 +29,9 @@ public class Timer : MonoBehaviour {
         else
         {
             //time == 0, game must end. Since time ran out, goes to lose screen 
-            SceneManager.LoadScene("LoseTest", LoadSceneMode.Single);
+            // SceneManager.LoadScene("LoseTest", LoadSceneMode.Single);
+            totalSec = 0; //totalSec is actually -1, reset to 0. 
+            endPanel.SetActive(true);    
         }
         //elapsed time is float 
         // ((int)elapsedTime % 60).ToString("f0"); //float with 0 decimals; f2 = float w/ 2 decimal places    

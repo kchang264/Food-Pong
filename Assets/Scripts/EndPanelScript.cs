@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//EndPanel is activated when either timer reaches 0, or all the ingredients are destroyed 
+// (RecipeText.cs) 
+
+
 public class EndPanelScript : MonoBehaviour {
     private Score scoreScript;
     private int gameScore;
@@ -31,7 +35,7 @@ public class EndPanelScript : MonoBehaviour {
         timeText.text = timeLeft.ToString();
 
         //calc total score 
-        int totalScore = gameScore + scoreScript.calcTotalScore(timeLeft);
+        int totalScore = scoreScript.calcTotalScore(timeLeft);
         totalScoreText.text = totalScore.ToString(); 
 
         // deactivate/activate retry and next button

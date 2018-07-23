@@ -16,6 +16,8 @@ public class RecipesText : MonoBehaviour {
     public Text txt;
     public int maxRecipe; // max number one ingredient the recipe can call for
 
+    public GameObject endPanel; 
+
     /*Updates Text element with the current GameObject Names and Count of ingredients needed*/
     public void StartingRecipe(GameObject[] ListOfIngredients)
     {
@@ -56,7 +58,8 @@ public class RecipesText : MonoBehaviour {
     {
         if (RecipeDone())
         {
-            SceneManager.LoadScene("WinTest", LoadSceneMode.Single);
+            //SceneManager.LoadScene("WinTest", LoadSceneMode.Single);
+            endPanel.SetActive(true);
         }
     }
 }
