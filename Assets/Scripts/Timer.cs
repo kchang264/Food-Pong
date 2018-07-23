@@ -32,4 +32,9 @@ public class Timer : MonoBehaviour {
         //elapsed time is float 
         // ((int)elapsedTime % 60).ToString("f0"); //float with 0 decimals; f2 = float w/ 2 decimal places    
     }
+
+    public int GetTimeLeft()
+    {
+        return totalSec; 
+    }
 }

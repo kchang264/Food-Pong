@@ -19,7 +19,6 @@ public class Score : MonoBehaviour {
     //when the desired ingredient is hit, add 10 points. 
 	public void onHit()
     {
-        Debug.Log("Im in onHit");
         score += 10; //Each ingreidient gives 10 points for now 
         scoreText.text = scText + score;
     }
@@ -28,6 +27,11 @@ public class Score : MonoBehaviour {
     public int calcTotalScore(int secsLeft )
     {
         return score + 5* secsLeft; 
+    }
+
+    public int GetScore()
+    {
+        return score; 
     }
 
 }
