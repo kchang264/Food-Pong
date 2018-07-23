@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour {
 
 	void Start () {
         // Use this for initialization
-        totalSec = 10; //Player gets 120 seconds to play  
+        totalSec = 120; //Player gets 120 seconds to play  
         timerTxt.text = totalSec.ToString(); 
 
         InvokeRepeating( "UpdateSeconds" , 2.0f, 1.0f); //calls after 2 seconds for every second 

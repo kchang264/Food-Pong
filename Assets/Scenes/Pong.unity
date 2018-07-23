@@ -1728,6 +1728,16 @@ Prefab:
       propertyPath: maxSpeed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 114136029821601286, guid: 874b2a23e8eae524aaf1bd2adb08eb5a,
+        type: 2}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 88384905}
+    - target: {fileID: 114136029821601286, guid: 874b2a23e8eae524aaf1bd2adb08eb5a,
+        type: 2}
+      propertyPath: scoreScript
+      value: 
+      objectReference: {fileID: 88384905}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 874b2a23e8eae524aaf1bd2adb08eb5a, type: 2}
   m_IsPrefabParent: 0

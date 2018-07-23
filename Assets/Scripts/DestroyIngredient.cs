@@ -15,6 +15,10 @@ using System;
 
 public class DestroyIngredient : MonoBehaviour {
 
+    //Score update setup
+    Camera mainCamera; //Score.cs is attached to main camera 
+    private Score scoreScript;
+
     private Rigidbody2D rb;
     public int speed;
     public Text txt;
@@ -27,11 +31,6 @@ public class DestroyIngredient : MonoBehaviour {
         rb = gameObject.GetComponent<Rigidbody2D>();
         script = txt.GetComponent<RecipesText>(); // Access the other script to change the values
 
-        //There's an exception error (as of 8/7/18 11 am). Just putting here before i forget lols. 
-        //NullReferenceException: Object reference not set to an instance of an object
-        //DestroyIngredient.Start()(at Assets / Scripts / DestroyIngredient.cs:27)
-
-
         // new array of string versions of names of ingredients for comparison purposes
         namesIngredients = new string[script.ListOfIngredients.Length];
         for (int i = 0; i < namesIngredients.Length; ++i)
@@ -42,6 +41,8 @@ public class DestroyIngredient : MonoBehaviour {
         // ignore collisions btwn ball and border #### not sure if this works??? because each border is a clone not the original
         Physics2D.IgnoreCollision(ignoreBorder.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 
+        //setup for updating score 
+        scoreScript = Camera.main.GetComponent<Score>(); 
     }
 
     /*Accesses RecipesText Script and changes the text value every time an ingredient is hit*/
@@ -53,7 +54,10 @@ public class DestroyIngredient : MonoBehaviour {
         {
             script.numberItems[index]--;
             script.StartingRecipe(script.ListOfIngredients);
-        }
+
+            //calls a fucntion in Score.cs to update score 
+            scoreScript.onHit();
+        }       
     }
 	
     private void OnMouseDown()
