@@ -11,6 +11,11 @@ public class BallMovement : MonoBehaviour {
 
     private float timeAfterRespawn = 2;
 
+    private int lives = 3;
+
+    public GameObject endPanel; 
+    public GameObject retryButton;
+
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
@@ -81,12 +86,20 @@ public class BallMovement : MonoBehaviour {
         if (coll.gameObject.name == "LeftWall")
         {
             //##### add code here for decreasing life if the ball hits the wall #####
+            lives--;
 
-            timeAfterRespawn = 2; //2 seconds after respawn, set velocity to fast
-            transform.position = new Vector3(-1, 0, 0);
-            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-            gameObject.GetComponent<Rigidbody2D>().Sleep();
-            Invoke("GoBall", 2);
+            if (lives < 0) {
+                endPanel.SetActive(true);
+                retryButton.SetActive(true);
+                lives = 3;
+            } else {
+                timeAfterRespawn = 2; //2 seconds after respawn, set velocity to fast
+                transform.position = new Vector3(-1, 0, 0);
+                gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                gameObject.GetComponent<Rigidbody2D>().Sleep();
+                Invoke("GoBall", 2);
+            }
+
         }
     }
 }
