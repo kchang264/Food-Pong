@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BallMovement : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class BallMovement : MonoBehaviour {
     private float timeAfterRespawn = 2;
 
     private int lives = 3;
+    public Text livesText;
 
     public GameObject endPanel; 
     public GameObject retryButton;
@@ -20,6 +22,7 @@ public class BallMovement : MonoBehaviour {
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         Invoke("GoBall", 2);
+        livesText.text = "Lives Left: " + lives.ToString();
 	}
 	
     /*custom clamp magnitude function that accounts for both max and min */
@@ -87,6 +90,7 @@ public class BallMovement : MonoBehaviour {
         {
             //##### add code here for decreasing life if the ball hits the wall #####
             lives--;
+            livesText.text = "Lives Left: " + lives.ToString();
 
             if (lives < 0) {
                 endPanel.SetActive(true);
