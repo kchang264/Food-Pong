@@ -18,6 +18,10 @@ public class BallMovement : MonoBehaviour {
     public GameObject endPanel; 
     public GameObject retryButton;
 
+    public GameObject Life1;
+    public GameObject Life2;
+    public GameObject Life3;
+
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
@@ -77,7 +81,7 @@ public class BallMovement : MonoBehaviour {
         }
     }
 
-    void OnCollisionEnter2D(Collision2D coll)
+    private void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.collider.CompareTag("Paddle"))
         {
@@ -95,13 +99,31 @@ public class BallMovement : MonoBehaviour {
             if (lives < 0) {
                 endPanel.SetActive(true);
                 retryButton.SetActive(true);
+
                 lives = 3;
+                Life1.SetActive(true);
+                Life2.SetActive(true);
+                Life3.SetActive(true);
             } else {
                 timeAfterRespawn = 2; //2 seconds after respawn, set velocity to fast
                 transform.position = new Vector3(-1, 0, 0);
                 gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
                 gameObject.GetComponent<Rigidbody2D>().Sleep();
                 Invoke("GoBall", 2);
+
+                if (lives == 2) {
+                    Life1.SetActive(true);
+                    Life2.SetActive(true);
+                    Life3.SetActive(false);
+                } else if (lives == 1) {
+                    Life1.SetActive(true);
+                    Life2.SetActive(false);
+                    Life3.SetActive(false);
+                } else if (lives == 0) {
+                    Life1.SetActive(false);
+                    Life2.SetActive(false);
+                    Life3.SetActive(false);
+                }
             }
 
         }
