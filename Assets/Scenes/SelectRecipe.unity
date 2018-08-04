@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 109231313}
   - component: {fileID: 109231312}
   m_Layer: 5
-  m_Name: Credits
+  m_Name: Recipe3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,15 +189,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2091404303}
-        m_MethodName: changeScene
-        m_Mode: 5
+      - m_Target: {fileID: 1938858095}
+        m_MethodName: createRecipe
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: CreditScene
+          m_StringArgument: Pong
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -303,7 +303,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Credits
+  m_Text: Recipe3
 --- !u!222 &125755919
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -378,7 +378,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Instructions
+  m_Text: Recipe2
 --- !u!222 &286058583
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 324247756}
   - component: {fileID: 324247755}
   m_Layer: 5
-  m_Name: Quit
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,14 +529,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2091404303}
-        m_MethodName: exit
-        m_Mode: 1
+        m_MethodName: changeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: TitleScreen
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 632350950}
   - component: {fileID: 632350953}
   m_Layer: 5
-  m_Name: Start
+  m_Name: Recipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -772,15 +772,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2091404303}
-        m_MethodName: changeScene
-        m_Mode: 5
+      - m_Target: {fileID: 1938858095}
+        m_MethodName: createRecipe
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SelectRecipe
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -963,7 +963,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: Back to Menu
 --- !u!222 &868675625
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1038,7 +1038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: Recipe1
 --- !u!222 &919033409
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1190,7 +1190,7 @@ GameObject:
   - component: {fileID: 1180283518}
   - component: {fileID: 1180283517}
   m_Layer: 5
-  m_Name: Instructions
+  m_Name: Recipe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1254,15 +1254,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2091404303}
-        m_MethodName: changeScene
-        m_Mode: 5
+      - m_Target: {fileID: 1938858095}
+        m_MethodName: createRecipe
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: InstructionScreen
+          m_StringArgument: Pong
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1333,7 +1333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -448, y: 120}
+  m_AnchoredPosition: {x: -68, y: 120}
   m_SizeDelta: {x: 290, y: 290}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226915646
@@ -1368,7 +1368,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Temporary Cooking Title
+  m_Text: 'Select Recipe '
 --- !u!222 &1226915647
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1669,6 +1669,50 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 196fe542ad163b149adf1ca04c19c753, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1938858094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1938858096}
+  - component: {fileID: 1938858095}
+  m_Layer: 0
+  m_Name: RecipeHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1938858095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938858094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88ff1f5f5ab8154c9f183ba53eb06c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  list:
+  - {fileID: 1950080813141582, guid: 356cb1c6bf5a10e4583cda6726d2b3a2, type: 2}
+  - {fileID: 1950080813141582, guid: 4d2d8150d04bf9e4481d1baa11c002bc, type: 2}
+  - {fileID: 1950080813141582, guid: b1a11df1e7e5e8c43a3401ee66f354fe, type: 2}
+--- !u!4 &1938858096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938858094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5304105, y: 0.8829058, z: -0.25406155}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2091404298
 GameObject:
   m_ObjectHideFlags: 0
