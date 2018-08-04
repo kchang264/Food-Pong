@@ -63,7 +63,6 @@ public class RecipesText : MonoBehaviour {
     {
         if (RecipeDone())
         {
-            //SceneManager.LoadScene("WinTest", LoadSceneMode.Single);
             endPanel.SetActive(true);
         }
     }

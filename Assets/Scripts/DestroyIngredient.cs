@@ -49,7 +49,7 @@ public class DestroyIngredient : MonoBehaviour {
     /*Accesses RecipesText Script and changes the text value every time an ingredient is hit*/
 
     private void DecrementRecipeCount(Collision2D other)
-    {  //TODO COME BACK 
+    {  
         Debug.Log(other.gameObject.name);
         int index = Array.IndexOf(namesIngredients, other.gameObject.name);
         if (index != -1 && script.numberItems[index] > 0)

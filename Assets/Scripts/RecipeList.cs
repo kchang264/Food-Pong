@@ -4,14 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class RecipeList : MonoBehaviour {
-    //Need to create an object with 3 variabeles : 
-    // Array of String/Gameobjects : chooses which ingredients are in a recipe 
-    // Array of Ints: keeps track of how many of each ingredients 
-    // String: name of recipe (maybe not, keep them all in here could just be var name) 
 
+    //List of Recipes 
     public GameObject[] list; 
 
     //when a recipe button is selected in SelectRecipe Scene 
+    //i is index in list 
     public void createRecipe( int i ) 
     {
         //check if a GameObject named "RecipeToDo" exists, if so, delete it
