@@ -28,15 +28,18 @@ public class DestroyIngredient : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        GameObject recipeObject = GameObject.Find("RecipeToDo");
+        Recipe recipe = recipeObject.GetComponent<Recipe>();
+
         rb = gameObject.GetComponent<Rigidbody2D>();
         script = txt.GetComponent<RecipesText>(); // Access the other script to change the values
 
         // new array of string versions of names of ingredients for comparison purposes
-        namesIngredients = new string[script.ListOfIngredients.Length]; 
-
+        namesIngredients = new string[recipe.ListOfIngredients.Length];
+        
         for (int i = 0; i < namesIngredients.Length; ++i)
         {
-            namesIngredients[i] = script.ListOfIngredients[i].name;
+            namesIngredients[i] = recipe.ListOfIngredients[i].name;
         }
 
         // ignore collisions btwn ball and border #### not sure if this works??? because each border is a clone not the original
@@ -50,7 +53,6 @@ public class DestroyIngredient : MonoBehaviour {
 
     private void DecrementRecipeCount(Collision2D other)
     {  
-        Debug.Log(other.gameObject.name);
         int index = Array.IndexOf(namesIngredients, other.gameObject.name);
         if (index != -1 && script.numberItems[index] > 0)
         {
@@ -64,7 +66,6 @@ public class DestroyIngredient : MonoBehaviour {
 	
     private void OnMouseDown()
     {
-        Debug.Log("Click");
         rb.velocity = new Vector2(speed, 0.0f);
     }
 
@@ -79,5 +80,6 @@ public class DestroyIngredient : MonoBehaviour {
             Destroy(other.gameObject);
             rb.velocity = new Vector2(-speed, -rb.velocity.y);
         }
+
     }
 }

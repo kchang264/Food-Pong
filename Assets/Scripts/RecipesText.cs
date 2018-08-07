@@ -10,8 +10,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class RecipesText : MonoBehaviour {
-
-    [HideInInspector]
     public GameObject[] ListOfIngredients;
 
     public int[] numberItems;
