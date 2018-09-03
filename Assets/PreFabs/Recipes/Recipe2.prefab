@@ -54,5 +54,8 @@ MonoBehaviour:
   ListOfIngredients:
   - {fileID: 1229432464782376, guid: 61c25ef4084fae943a6bfeb0537574dd, type: 2}
   - {fileID: 1253367004954930, guid: 4163628190b04534c8299c9f37172c92, type: 2}
-  numberItems: 0200000002000000
-  recipeName: Recipe2
+  - {fileID: 1079201591238134, guid: 05743d8a25ae293408c22394511c47a0, type: 2}
+  - {fileID: 1803550047316434, guid: 08a1572c520579c4489991f109ee282b, type: 2}
+  - {fileID: 1383971100771180, guid: 9bd6b9a46ddec1d40a497336c2ee80d2, type: 2}
+  numberItems: 0200000003000000020000000100000002000000
+  recipeName: Medium
