@@ -57,6 +57,7 @@ public class EndPanelScript : MonoBehaviour {
             retryButton.SetActive(true);
             titleText.text = "Loss";
             totalScoreText.text = scoreText.text;
+
         }
         else
         {

@@ -16,14 +16,14 @@ public class RecipesText : MonoBehaviour {
     public Text txt;
     public int maxRecipe; // max number one ingredient the recipe can call for
 
+    private Recipe recipe;
+
     public GameObject endPanel;
 
     /*Updates Text element with the current GameObject Names and Count of ingredients needed*/
     public void StartingRecipe( GameObject[] ListOfIngredients )
     {
-        //grabs recipe 
-        GameObject recipeObject = GameObject.Find("RecipeToDo");
-        Recipe recipe = recipeObject.GetComponent<Recipe>(); 
+        //grabs recipe, keeps a copy of the duplicate of the recipe GameObject 
 
         txt.text = recipe.recipeName + "\n";
         for (int i = 0; i < recipe.ListOfIngredients.Length; ++i)
@@ -48,8 +48,8 @@ public class RecipesText : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GameObject recipeObject = GameObject.Find("RecipeToDo");
-        Recipe recipe = recipeObject.GetComponent<Recipe>();
+        GameObject recipeObject = Instantiate(GameObject.Find("RecipeToDo"));
+        recipe = recipeObject.GetComponent<Recipe>();
         ListOfIngredients = recipe.ListOfIngredients; //should be pass by reference 
         numberItems = recipe.numberItems; 
 
