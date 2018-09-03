@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour {
     public float boundY = 6.0f;
     private Rigidbody2D rb2d;
 
+    private int maxRotDeg = 20; 
+
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
@@ -18,13 +20,23 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         var vel = rb2d.velocity;
-        if (Input.GetKey(moveUp))
+        //move up and down 
+        if (Input.GetKey(moveUp) || Input.GetKey( KeyCode.W ))
         {
             vel.y = speed;
         }
-        else if (Input.GetKey(moveDown))
+        else if (Input.GetKey(moveDown) || Input.GetKey( KeyCode.S ) )
         {
             vel.y = -speed;
+        }
+        //rotate 
+        else if( Input.GetKey(KeyCode.LeftArrow ) || Input.GetKey( KeyCode.A ) )
+        {
+            transform.Rotate( 0, 0, 1, Space.Self ); 
+        }
+        else if( Input.GetKey( KeyCode.RightArrow ) | Input.GetKey( KeyCode.D ) )
+        {
+            transform.Rotate(0, 0, -1, Space.Self);
         }
         else if (!Input.anyKey)
         {
