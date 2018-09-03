@@ -12,7 +12,7 @@ public class BallMovement : MonoBehaviour {
 
     private float timeAfterRespawn = 2;
 
-    private int lives = 3;
+    public int lives = 3;
     public Text livesText;
 
     public GameObject endPanel; 
@@ -98,12 +98,6 @@ public class BallMovement : MonoBehaviour {
 
             if (lives < 0) {
                 endPanel.SetActive(true);
-                retryButton.SetActive(true);
-
-                lives = 3;
-                Life1.SetActive(true);
-                Life2.SetActive(true);
-                Life3.SetActive(true);
             } else {
                 timeAfterRespawn = 2; //2 seconds after respawn, set velocity to fast
                 transform.position = new Vector3(-1, 0, 0);

@@ -10,8 +10,6 @@ public class PlayerMovement : MonoBehaviour {
     public float boundY = 6.0f;
     private Rigidbody2D rb2d;
 
-    private int maxRotDeg = 20; 
-
 	// Use this for initialization
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();

@@ -1689,6 +1689,7 @@ MonoBehaviour:
   totalScoreText: {fileID: 1110307672}
   retryButton: {fileID: 1233027948}
   nextButton: {fileID: 1324613252}
+  titleText: {fileID: 413996724}
 --- !u!1 &1048534040
 GameObject:
   m_ObjectHideFlags: 0
