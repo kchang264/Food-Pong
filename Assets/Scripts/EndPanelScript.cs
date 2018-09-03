@@ -51,7 +51,6 @@ public class EndPanelScript : MonoBehaviour {
         //Determine if Win or Loss. If Loss, timeLeft is not considered in total score
         // deactivate/activate retry and next button, and setup title 
         //no more time left means a loss, or lives = 0
-        Debug.Log("LivesLeft is: " + livesLeft);
 
         if (timeLeft == 0 || livesLeft < 0 )   
         {
