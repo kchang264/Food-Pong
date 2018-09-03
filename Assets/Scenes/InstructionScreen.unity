@@ -379,7 +379,9 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
   m_Text: "- Use the paddle to hit the ball and get the ingredients in the recipe
-    on the other side in a pong game\n- Any left over time adds to the score \n"
+    on the other side in a pong game\n- Use WASD and up/down/left/right keys to move
+    the paddle up and down, as well as rotate. \n- Any left over time adds to the
+    score \n"
 --- !u!222 &1170578155
 CanvasRenderer:
   m_ObjectHideFlags: 0
